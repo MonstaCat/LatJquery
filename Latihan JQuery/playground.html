@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jquery Playground</title>
+    <script src="assets/jquery-3.4.1.min.js"></script>
+
+    <script>
+        $("document").ready(function(){
+            $('div').mouseover(function () {
+                $(this).css({background: "red", transition: "1s"}).animate({ left: '250px' });
+            });
+            
+            $('div').mouseleave(function(){
+                $(this).css({background:"pink", transition: "1s"});
+            });
+        });
+    </script>
+    <style>
+        div {
+            background: yellow;
+            width: 50px;
+            height: 50px;
+            float: top;
+            margin: 10px;
+            cursor: pointer;
+        }
+    </style>   
+</head>
+<body>
+    
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+
+</body>
+</html>
